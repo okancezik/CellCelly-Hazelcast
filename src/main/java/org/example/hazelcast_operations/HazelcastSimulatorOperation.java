@@ -24,7 +24,19 @@ public class HazelcastSimulatorOperation {
             e.printStackTrace();
             return null;
         } finally {
-            hazelcast.shutdown();
+            //hazelcast.shutdown();
+        }
+    }
+
+    public static Collection<Object> getAllMsisdn(){
+        try{
+            IMap<Object, Object> map = hazelcast.getMap(StringConstants.mapName);
+            return map.keySet();
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }finally {
+            //hazelcast.shutdown();
         }
     }
 }

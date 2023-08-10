@@ -8,8 +8,6 @@ import com.hazelcast.map.IMap;
 import org.example.utils.configurations.Configuration;
 import org.example.utils.constants.StringConstants;
 
-import java.util.Collection;
-
 public class HazelcastDGWOperation {
     private static final ClientConfig config = Configuration.getConfig();
     private static final HazelcastInstance hazelcast = HazelcastClient.newHazelcastClient(config);

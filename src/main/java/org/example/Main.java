@@ -9,18 +9,25 @@ import java.util.Collection;
 public class Main {
     public static void main(String[] args) {
 
-        //String result = HazelcastDGWOperation.getPartitionIdByKey("Fourht");
-        //System.out.println(result);
+        /* --Get Operation
+        String result = HazelcastDGWOperation.getPartitionIdByKey("BrU");
+        System.out.println(result);
+         */
 
+        /* --Get Operation
         Collection<Object> all = HazelcastSimulatorOperation.getAllPartitionId();
-        //System.out.println(all.toArray()[0]);
         System.out.println(all);
-        //String result = HazelcastMWOperation.put("First","Okan");
-        //System.out.println(result);
+         */
 
-        //String result = HazelcastMWOperation.remove("Second");
-        //System.out.println(result);
+        /* --Put Operation
+        String result = HazelcastMWOperation.put("deneme4","value4");
+        System.out.println(result);
+         */
 
+        /* --Remove Operation
+        String result = HazelcastMWOperation.remove("Second");
+        System.out.println(result);
+         */
 
     }
 }
